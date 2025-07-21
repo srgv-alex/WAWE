@@ -1,0 +1,41 @@
+.header {
+	padding-block: 35px 92px;
+	background-image: url('./../../img/hero/main-bg.jpg');
+	background-position: center bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+
+	@include mediaBg() {
+		background-image: url('./../../img/hero/main-bg@2x.jpg');
+	}
+}
+
+.header__row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 242px;
+}
+
+.header__title {
+	padding-left: 64px;
+	text-align: center;
+}
+
+.header__content {
+	margin-bottom: 315px;
+}
+
+.header__text {
+	padding-left: 24px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 24px;
+	color: #000;
+	letter-spacing: 0.03em;
+}
+
+.header__decor {
+	padding-left: 22px;
+	text-align: center;
+}
