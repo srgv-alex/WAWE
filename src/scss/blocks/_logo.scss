@@ -1,3 +1,7 @@
 .logo {
+	flex-shrink: 0;
 	margin-right: 183px;
+	@include m1024() {
+		margin-right: 0;
+	}
 }

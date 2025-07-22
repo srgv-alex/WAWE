@@ -3,13 +3,46 @@
 	font-weight: 700;
 	font-size: 200px;
 	color: var(--main-title-color);
+	@include m768() {
+		font-size: 120px;
+	}
+	@include m425() {
+		font-size: 90px;
+	}
 }
 
-.title-2 {
-	margin: 1em 0 0.5em;
-	font-size: 32px;
-	font-weight: 700;
+.h2 {
 	font-family: var(--font-titles);
+	font-weight: 600;
+	font-size: 48px;
+	color: var(--accent);
+	letter-spacing: 0.01em;
+	@include m1024() {
+		font-size: 35px;
+	}
+	@include m768() {
+		font-size: 25px;
+	}
+	@include m425() {
+		font-size: 15px;
+	}
+}
+
+.subtitle--decor {
+	position: relative;
+}
+.subtitle--decor::before {
+	position: absolute;
+	content: '';
+	right: 46px;
+	bottom: -50px;
+	width: 48px;
+	height: 85px;
+	background-image: url(./../../img/decor/line-decor.webp);
+	background-repeat: no-repeat;
+	@include m1280() {
+		display: none;
+	}
 }
 
 .title-3 {
