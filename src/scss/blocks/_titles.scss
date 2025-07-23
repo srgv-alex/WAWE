@@ -12,6 +12,7 @@
 }
 
 .h2 {
+	display: inline-block;
 	font-family: var(--font-titles);
 	font-weight: 600;
 	font-size: 48px;
@@ -31,18 +32,15 @@
 .subtitle--decor {
 	position: relative;
 }
-.subtitle--decor::before {
+.subtitle--decor::after {
 	position: absolute;
 	content: '';
-	right: 46px;
-	bottom: -50px;
+	right: -48px;
+	bottom: -46px;
 	width: 48px;
 	height: 85px;
 	background-image: url(./../../img/decor/line-decor.webp);
 	background-repeat: no-repeat;
-	@include m1280() {
-		display: none;
-	}
 }
 
 .title-3 {
