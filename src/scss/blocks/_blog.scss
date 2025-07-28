@@ -1,0 +1,40 @@
+.blog {
+	padding-bottom: 197px;
+}
+
+.blog__header {
+	text-align: center;
+	margin-bottom: 229px;
+}
+
+.blog-slider {
+	height: 800px;
+	background-image: linear-gradient(rgba(36, 33, 33, 0.5)),
+		url(./../../img/slider/slider-bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.blog-slider .container {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	height: 800px;
+}
+
+.swiper-slide__content {
+	max-width: 713px;
+	padding-bottom: 31px;
+	padding-right: 15px;
+}
+.slide-title {
+	font-size: 48px;
+	font-weight: 400;
+	color: #fff;
+	line-height: 1.16667;
+}
+.slide-text {
+	line-height: 1.28571;
+	color: #fff;
+}

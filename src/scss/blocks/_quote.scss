@@ -1,0 +1,36 @@
+.blockquote {
+	padding-block: 80px 65px;
+	background-color: var(--page-secondary);
+	@include m768() {
+		padding-block: 35px;
+	}
+}
+
+.quote {
+	max-width: 706px;
+	margin: 0 auto;
+	p {
+		font-style: italic;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 1.11111;
+		@include m768() {
+			font-size: 25px;
+		}
+		@include m360() {
+			font-size: 18px;
+		}
+	}
+	@include m768() {
+		text-align: center;
+	}
+}
+.autor {
+	display: block;
+	text-align: right;
+	font-style: italic;
+	line-height: 1.28571;
+	@include m768() {
+		text-align: center;
+	}
+}
