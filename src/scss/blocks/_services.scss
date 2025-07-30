@@ -1,0 +1,77 @@
+.services {
+	padding-block: 200px;
+	background: var(--page-secondary);
+	@include m1280() {
+		padding-block: 80px;
+	}
+	@include m768() {
+		padding-block: 35px;
+	}
+}
+
+.services__header {
+	margin-bottom: 212px;
+	text-align: center;
+	@include m1280() {
+		margin-bottom: 100px;
+	}
+	@include m768() {
+		margin-bottom: 35px;
+	}
+}
+
+.price {
+	display: flex;
+	justify-content: space-between;
+	@include m1280() {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 20px;
+	}
+}
+
+.price-card {
+	display: flex;
+	flex-direction: column;
+	padding: 49px 42px;
+	background-color: var(--page-bg);
+	@include m1280() {
+		max-width: 300px;
+		text-align: center;
+	}
+}
+.price-card__title {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.11111;
+	text-align: center;
+	color: var(--accent);
+	margin-bottom: 58px;
+}
+.price-card__content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	line-height: 1.28571;
+	font-weight: 400;
+	margin-bottom: 61px;
+	@include m1280() {
+		text-align: start;
+	}
+}
+.price-card__price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 1.11111;
+	color: var(--accent);
+	margin-top: auto;
+}
+.price-card__dollar {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.22222;
+}

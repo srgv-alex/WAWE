@@ -1,0 +1,28 @@
+.map {
+	padding-block: 200px;
+	@include m768() {
+		padding-block: 50px;
+	}
+}
+
+.map__img {
+	position: relative;
+}
+
+.map__pin {
+	position: absolute;
+	top: 16%;
+	left: 49%;
+	@include m768() {
+		top: 6%;
+		left: 46%;
+	}
+	@include m425() {
+		top: -12%;
+		left: 43%;
+	}
+	@include m360() {
+		top: -24%;
+		left: 41%;
+	}
+}
