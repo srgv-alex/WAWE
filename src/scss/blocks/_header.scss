@@ -23,7 +23,7 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 242px;
-	@include m1024() {
+	@include m1280() {
 		display: flex;
 		justify-content: space-between;
 	}
